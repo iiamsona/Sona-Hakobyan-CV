@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 400vh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+}
+
+#menu {
+  width: 20%;
+  height: 100%;
+  background-color: black;
+  min-width: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  color: rgb(255, 255, 255);
+  list-style-type: none;
+  padding: 20vh;
+}
+
+li {
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  filter: opacity(0.2);
+}
+
+p {
+  padding-bottom: 1%;
+  font-size: 1.2vw;
+}
+
+h1 {
+  font-size: 4vw;
+}
+
+#me {
+  width: 100%;
+  height: 70%;
+  position: relative;
+}
+
+
+#meb {
+  width: 100%;
+  height: 100%;
+  background-image: url("me.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+  padding: 10%;
+  position: absolute;
+  min-height: 420px;
+}
+
+#abt-me {
+  position: absolute;
+  padding: 2vh;
+  width: 65%;
+}
+
+#sona {
+  color: rgb(0, 0, 0);
+  padding: 2vh;
+}
+
+#abt-sona {
+  color: rgb(0, 0, 0);
+  padding: 2vh;
+}
+
+#accounts {
+  padding: 2vh;
+}
+
+img {
+  width: 5%;
+  height: 5.5%;
+  cursor: pointer;
+  filter: opacity(0.7) drop-shadow(0 0 0 rgb(0, 0, 0));
+  margin-right: 2%;
+}
+
+#about {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 4, 4);
+}
+
+#education {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(187, 255, 0);
+}
+
+#experience {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(55, 0, 255);
+}
