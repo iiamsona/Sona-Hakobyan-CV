@@ -26,13 +26,12 @@ html {
   width: 20%;
   height: 100%;
   background-color: black;
-  min-width: 120px;
+  min-width: 130px;
   display: flex;
   justify-content: center;
 }
 
 ul {
-  color: rgb(255, 255, 255);
   list-style-type: none;
   padding: 20vh;
 }
@@ -43,8 +42,13 @@ li {
   font-weight: 900;
   cursor: pointer;
   filter: opacity(0.2);
+  transition: 1s;
+  color: rgb(255, 255, 255);
 }
-
+li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
 p {
   padding-bottom: 1%;
   font-size: 1.2vw;
@@ -54,12 +58,17 @@ h1 {
   font-size: 4vw;
 }
 
+li:hover {
+  transform: scale(1.2);
+  transition: 1.5s;
+  color: rgb(158, 214, 221);
+}
+
 #me {
   width: 100%;
   height: 70%;
   position: relative;
 }
-
 
 #meb {
   width: 100%;
@@ -79,7 +88,7 @@ h1 {
   width: 65%;
 }
 
-#sona {
+#me h1 {
   color: rgb(0, 0, 0);
   padding: 2vh;
 }
@@ -93,13 +102,20 @@ h1 {
   padding: 2vh;
 }
 
-img {
+#accounts img {
   width: 5%;
   height: 5.5%;
   cursor: pointer;
   filter: opacity(0.7) drop-shadow(0 0 0 rgb(0, 0, 0));
   margin-right: 2%;
+  transition: 1s;
 }
+
+#accounts :only-child:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
+
 
 #about {
   width: 100%;
@@ -117,4 +133,42 @@ img {
   width: 100%;
   height: 100vh;
   background-color: rgb(55, 0, 255);
+}
+
+#certificates {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(224, 223, 222);
+}
+#certificates-txt {
+display: flex;
+width: 100%;
+height: 20%;
+align-items: center;
+justify-content: center;
+}
+
+
+#certificate-img-div {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 50%);
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+#certificate-img-div img {
+  width:80%;
+  height:65%;
+  margin: 1%;
+  transition: 1s;
+  border-radius: 5px;
+  justify-self: center;
+}
+
+#certificate-img-div img:hover {
+  transform: scale(1.2);
+  transition: 1s;
 }
