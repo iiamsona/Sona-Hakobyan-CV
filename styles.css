@@ -8,6 +8,7 @@ body,
 html {
   width: 100%;
   height: 400vh;
+  scroll-behavior: smooth;
 }
 
 #root {
