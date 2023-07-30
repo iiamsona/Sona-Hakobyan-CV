@@ -21,6 +21,7 @@ html {
   height: 100vh;
   display: flex;
   background-color: rgb(255, 255, 255);
+  min-height: 500px;
 }
 
 #menu {
@@ -28,13 +29,14 @@ html {
   height: 100%;
   background-color: black;
   min-width: 130px;
+  min-height: 500px;
   display: flex;
   justify-content: center;
 }
 
 ul {
   list-style-type: none;
-  padding: 20vh;
+  padding: 10vh;
 }
 
 li {
@@ -65,28 +67,50 @@ li:hover {
   color: rgb(158, 214, 221);
 }
 
+#btn {
+  width: 100%;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border: solid 1px;
+  border-color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: 900;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: solid white 1px;
+  border-radius: 10px;
+  padding: 10%;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.445);
+}
+
 #me {
   width: 100%;
-  height: 70%;
+  height: 100%;
   position: relative;
 }
 
 #meb {
   width: 100%;
-  height: 100%;
+  height: 80%;
   background-image: url("me.png");
   background-size: 100%;
   background-repeat: no-repeat;
   filter: blur(3px);
   padding: 10%;
   position: absolute;
-  min-height: 420px;
+  background-size: cover;
 }
 
 #abt-me {
-  position: absolute;
+  position: relative;
   padding: 2vh;
-  width: 65%;
+  width:75%;
 }
 
 #me h1 {
@@ -97,6 +121,10 @@ li:hover {
 #abt-sona {
   color: rgb(0, 0, 0);
   padding: 2vh;
+}
+
+#abt-sona p{
+  font-size: calc(11px + 0.5vw);
 }
 
 #accounts {
@@ -110,13 +138,13 @@ li:hover {
   filter: opacity(0.7) drop-shadow(0 0 0 rgb(0, 0, 0));
   margin-right: 2%;
   transition: 1s;
+  min-width: 25px;
 }
 
 #accounts :only-child:hover {
   transform: scale(1.2);
   transition: 1s;
 }
-
 
 #about {
   width: 100%;
@@ -127,7 +155,44 @@ li:hover {
 #education {
   width: 100%;
   height: 100vh;
-  background-color: rgb(187, 255, 0);
+  background-color: rgb(243, 227, 193);
+}
+
+#education p {
+  font-size: 1.2vw;
+}
+
+#container-education {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(2, 30% 70%);
+  padding: 2%;
+}
+
+#student-txt {
+  grid-area: 1 / 2 / 1 / 5;
+  align-self: center;
+  justify-self: center;
+}
+
+#grades {
+  width: 90%;
+  height: width;
+  grid-area: 2 / 4 / 2 /4;
+  border-radius: 5px;
+  align-self: center;
+  justify-self: center;
+}
+
+#college-logo {
+  width: 50%;
+  height: width + 35%;
+  min-width: 100px;
+  min-height: 150px;
+  align-self: center;
+  justify-self: center;
 }
 
 #experience {
@@ -142,13 +207,12 @@ li:hover {
   background-color: rgb(224, 223, 222);
 }
 #certificates-txt {
-display: flex;
-width: 100%;
-height: 20%;
-align-items: center;
-justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  align-items: center;
+  justify-content: center;
 }
-
 
 #certificate-img-div {
   display: grid;
@@ -161,9 +225,7 @@ justify-content: center;
 }
 
 #certificate-img-div img {
-  width:80%;
-  height:65%;
-  margin: 1%;
+  width: 80%;
   transition: 1s;
   border-radius: 5px;
   justify-self: center;
@@ -172,4 +234,54 @@ justify-content: center;
 #certificate-img-div img:hover {
   transform: scale(1.2);
   transition: 1s;
+}
+
+@media only screen and (max-width:550px){
+
+  #meb {
+    width: 100%;
+    height: 100%;
+    background-image: url(me-mobile.png);
+    background-size: cover;
+  }
+
+  #abt-me {
+  width: 100%;
+  margin-top: 20%;
+}
+
+#abt-me p {
+  font-size: calc(12px + 0.5vw);
+  font-weight: 600;
+}
+
+  #container-education{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #certificates {
+    height: 250vw;
+  }
+
+  #certificate-img-div {
+    display: flex;
+    flex-direction: column;
+    height: 85%;
+  }
+
+  #certificate-img-div img {
+  width:42%;
+  transition: 1s;
+  border-radius: 5px;
+  padding: 2%;
+
+}
+
+#certificates-txt {
+  width: 100%;
+  height: 10%;
+  margin-bottom: 1%;
+  font-size: 150%;
+}
 }
