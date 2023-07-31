@@ -149,7 +149,72 @@ li:hover {
 #about {
   width: 100%;
   height: 100vh;
-  background-color: rgb(255, 4, 4);
+}
+
+#container-about {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+#my-pic {
+  width: 100%;
+  height: 100%;
+}
+
+#my-pic img {
+  width: 100%;
+  height: 100%;
+
+}
+
+#me-events {
+display: grid;
+background-color:#B59DE4 ; 
+grid-template-columns: 1fr;
+grid-template-rows: 0.4fr 1fr;
+}
+
+#me-events img {
+  width: 60%;
+  border-radius: 20px;
+}
+
+ #events-txt {
+  align-self:flex-end;
+ }
+
+ #events-txt img {
+  width: 50%;
+  height: 40px;
+ }
+
+ #events-img {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ }
+
+#dance {
+  background-color: #b5c7d3;
+  display: grid;
+}
+
+#dance h2 {
+  align-self: flex-end;
+  justify-self: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#dance img {
+  width: 60%;
+  border-radius: 20px;
+  align-self: center;
+  justify-self: center;
 }
 
 #education {
@@ -262,19 +327,19 @@ li:hover {
   }
 
   #college-logo {
-  grid-area: 1 /1 /1 /1;
-  justify-self: left;
-}
+    grid-area: 1 /1 /1 /1;
+    justify-self: left;
+  }
 
-#student-txt {
-  grid-area: 2 /1/2/1;
-  justify-self: left;
-}
+  #student-txt {
+    grid-area: 2 /1/2/1;
+    justify-self: left;
+  }
 
-#grades {
-  grid-area: 3/1/3/1;
-  justify-self: left;
-}
+  #grades {
+    grid-area: 3/1/3/1;
+    justify-self: left;
+  }
 
   #certificates {
     height: 250vw;
