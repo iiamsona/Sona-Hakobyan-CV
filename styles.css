@@ -32,6 +32,7 @@ html {
   min-height: 500px;
   display: flex;
   justify-content: center;
+  border-bottom-right-radius: 20px;
 }
 
 ul {
@@ -149,6 +150,8 @@ li:hover {
 #about {
   width: 100%;
   height: 100vh;
+  display: flex;
+  min-height: 600px;
 }
 
 #container-about {
@@ -160,21 +163,30 @@ li:hover {
 }
 
 #my-pic {
+  display: grid;
   width: 100%;
   height: 100%;
 }
 
 #my-pic img {
-  width: 100%;
-  height: 100%;
-
+  width: 90%;
+  height: 90%;
+  justify-self: center;
+  align-self: center;
+  border-radius: 20px;
+  min-width: 300px;
+  min-height: 300px;
 }
 
 #me-events {
-display: grid;
-background-color:#B59DE4 ; 
-grid-template-columns: 1fr;
-grid-template-rows: 0.4fr 1fr;
+  display: grid;
+  background-color: #b59de4;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.4fr 1fr;
+  border-radius: 20px;
+  width: 90%;
+  height: 90%;
+  justify-self: center;
 }
 
 #me-events img {
@@ -182,25 +194,55 @@ grid-template-rows: 0.4fr 1fr;
   border-radius: 20px;
 }
 
- #events-txt {
-  align-self:flex-end;
- }
+#events-txt {
+  align-self: flex-end;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
- #events-txt img {
+#events-txt img {
   width: 50%;
   height: 40px;
- }
+}
 
- #events-img {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- }
+#events-txt h2 {
+ font-size: calc(11px + 1.1vw)
+}
+
+#events-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#events-img img {
+  margin-bottom: 10%;
+  transition: 1s;
+}
+
+#events-img img:hover {
+  transform: scale(1.2);
+  transition: 1s;
+}
 
 #dance {
   background-color: #b5c7d3;
   display: grid;
+  border-radius: 20px;
+  width: 90%;
+  height: 90%;
+  align-self: center;
+  justify-self: center;
+}
+
+#dance img {
+  transition: 1s;
+}
+
+#dance img:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 
 #dance h2 {
@@ -208,6 +250,7 @@ grid-template-rows: 0.4fr 1fr;
   justify-self: center;
   margin-left: 10%;
   margin-right: 10%;
+  font-size: calc(11px + 1.1vw);
 }
 
 #dance img {
