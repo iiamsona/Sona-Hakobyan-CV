@@ -170,22 +170,20 @@ li:hover {
 
 #my-pic img {
   width: 90%;
-  height: 90%;
+  height: width;
   justify-self: center;
   align-self: center;
   border-radius: 20px;
-  min-width: 300px;
-  min-height: 300px;
 }
 
 #me-events {
   display: grid;
   background-color: #b59de4;
   grid-template-columns: 1fr;
-  grid-template-rows: 0.4fr 1fr;
+  grid-template-rows: 0.4fr, 1fr;
   border-radius: 20px;
   width: 90%;
-  height: 90%;
+  height: width;
   justify-self: center;
 }
 
@@ -229,9 +227,12 @@ li:hover {
 #dance {
   background-color: #b5c7d3;
   display: grid;
+  grid-template-columns: 0.9fr;
+  grid-template-rows: 0.9fr 0.9fr;
+  padding: 10%;
   border-radius: 20px;
   width: 90%;
-  height: 90%;
+  height: width;
   align-self: center;
   justify-self: center;
 }
