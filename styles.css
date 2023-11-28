@@ -344,13 +344,75 @@ li:hover {
 }
 
 #needle {
-  background-color: #b59de4;
+  background-color: #3c3c5c;
   grid-area: 1 / 1 / 1 / 1;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin: 5%;
+  border-radius: 5%;
+}
+
+#abt-needle, #abt-coderiders{
+ padding: 2%;
+ display: flex;
+  flex-direction: column;
+}
+
+#abt-needle img{
+  width: 30%;
+ border-radius: 5%;
+ margin-bottom: 2%;
+}
+
+#prog-langs-n{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #3c3c5c;
+  border: none;
+  border-radius: 5%;
+}
+
+#prog-langs-n img{
+  width: 90%;
+  height: width;
+  padding: 3%;
 }
 
 #coderiders{
-  background-color: #b59de4;
+  background-color: #545454;
   grid-area: 2/ 2/ 2/ 2;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin: 5%;
+  border-radius: 5%;
+}
+
+#abt-coderiders img{
+  padding: 2%;
+  width: 50%;
+  margin-bottom: 2%;
+}
+
+#prog-langs-c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #545454;
+  border: none;
+  border-radius: 5%;
+}
+
+#prog-langs-c img{
+  width: 79%;
+  height: width;
+  padding: 3%;
+}
+
+.experience-txt{
+  font-weight: 300;
 }
 
 #certificates {
@@ -358,6 +420,7 @@ li:hover {
   height: 100vh;
   background-color: rgb(224, 223, 222);
   min-height: 300px;
+  border-radius: 5%;
 }
 #certificates-txt {
   display: flex;
@@ -423,6 +486,13 @@ li:hover {
 
   #college-logo, #student-txt, #my-event, #grades, #education-txt {
     margin: 3%;
+  }
+
+  #experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #certificates {
