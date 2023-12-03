@@ -356,7 +356,9 @@ li:hover {
 }
 
 #needle {
-  background-color: #3c3c5c;
+  background-color: #b59de4b0;
+  /* #ffb6c1ba */
+   /* #fff1a8 */
   grid-area: 1 / 1 / 1 / 1;
   display: grid;
   grid-template-columns: 80% 20%;
@@ -382,7 +384,7 @@ li:hover {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #3c3c5c;
+  background-color:  #54545400;
   border: none;
   border-radius: 5%;
 }
