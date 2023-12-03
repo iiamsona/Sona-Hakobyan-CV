@@ -357,8 +357,6 @@ li:hover {
 
 #needle {
   background-color: #b59de4b0;
-  /* #ffb6c1ba */
-   /* #fff1a8 */
   grid-area: 1 / 1 / 1 / 1;
   display: grid;
   grid-template-columns: 80% 20%;
